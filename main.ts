@@ -1,0 +1,20 @@
+import {Queue} from "./Queue";
+import {Patient} from "./Patient";
+
+let queue = new Queue();
+queue.enqueue(new Patient('Smith', 5));
+queue.enqueue(new Patient('Jones', 4));
+queue.enqueue(new Patient('Fehrenbach', 6));
+queue.enqueue(new Patient('Brown', 1));
+queue.enqueue(new Patient('Ingram', 1));
+queue.sortListPatients();
+console.log(queue.showListPatients());
+console.log(queue.currentPatient());
+console.log(queue.nextPatient());
+queue.dequeue();
+console.log(queue.listCheckUp);
+console.log(queue.currentPatient());
+console.log(queue.nextPatient());
+queue.dequeue();
+console.log(queue.listCheckUp);
+console.log(queue.showListPatients());
